@@ -1,36 +1,19 @@
-# tiendanube-app-native-template-react
+# Nuvemshop react frontend native template for Native Apps
 
-# ⚛️ React Application
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-This project was bootstrapped with Create React App. 
+Welcome to the repository for the React Native interface of Nuvemshop initial native app templates. This repository serves as a submodule for specific app templates, providing a starting point for development.
 
-To use you need
+## Developer Resources
 
-- **Install and Run application**
-  ```bash
-  npm install
-  ```
-- **Run application**
-  ```bash
-  npn run start
-  ```
+Here you will find essential resources to kickstart Nuvemshop native app development:
 
-<a href="https://www.loom.com/share/5f6414f1425049ec985b8096dabfc389">
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/5f6414f1425049ec985b8096dabfc389-with-play.gif">
-</a>
+- [Introduction to Nuvemshop Apps](https://tiendanube.github.io/devhub-apps/docs/getting-started)
+- [App Authentication](https://tiendanube.github.io/devhub-apps/docs/applications/overview#autenticando-seu-aplicativo)
+- [Nexo](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nexo)
+- [Nimbus](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nimbus)
+- [Nuvemshop API Library Documentation](https://tiendanube.github.io/devhub-apps/docs/developer-tools/nuvemshop-api/)
 
+## License
 
-## Features
-- Management of pages and routes
-- Listing page
-- Forms page
-- Layout of pages in 2 columns
-- Navigation to a section of the Administrator
-- URL synchronization
-- Mobile mode
-
-## Dependencies 
- - React 17 with TypeScript
- - [Nexo](https://www.npmjs.com/package/@tiendanube/nexo)
- - [Nimbus](https://tiendanube.github.io/design-system-nimbus/?path=/story/intro-welcome--welcome) Design System Nuvemshop
- - [React Router Dom v5](https://v5.reactrouter.com/web/guides/quick-start)
+This repository is available as open-source under the terms of the [MIT License](https://opensource.org/license/mit/). Be sure to review and comply with the license guidelines when using this code.
