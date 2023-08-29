@@ -1,3 +1,3 @@
-export { default as MainPage } from './MainPage';
-export { default as ExamplesPage } from './ExamplesPage';
-export * from './examples';
+export { default as Home } from './Home';
+export { default as Examples } from './Examples';
+export { default as Products } from './Products';
