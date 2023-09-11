@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { navigateHeader } from '@tiendanube/nexo/helpers';
+import { navigateHeader } from '@tiendanube/nexo';
 import { Layout, Page } from '@nimbus-ds/patterns';
 import { Box, Pagination, Text } from '@nimbus-ds/components';
 
@@ -10,7 +10,7 @@ import { ListDesktop, ListMobile } from './components';
 import { PAGE_SIZE } from './products.definitions';
 import ProductsDataProvider from './ProductsDataProvider';
 
-const Home: React.FC = () => {
+const Products: React.FC = () => {
   const { t } = useTranslation('translations');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const handlePageChange = (page: number): void => {
@@ -84,4 +84,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Products;

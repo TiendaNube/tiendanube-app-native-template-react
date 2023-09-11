@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Trans, useTranslation } from 'react-i18next';
 import { Layout, Page } from '@nimbus-ds/patterns';
-import { goTo, navigateHeaderRemove } from '@tiendanube/nexo/helpers';
+import { goTo, navigateHeaderRemove } from '@tiendanube/nexo';
 import {
   Card,
   Text,
@@ -21,8 +21,8 @@ import {
 } from '@nimbus-ds/icons';
 
 import { nexo } from '@/app';
-import HomeDataProvider from './HomeDataProvider';
 import { Responsive } from '@/components';
+import HomeDataProvider from './HomeDataProvider';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
   return (
     <Page maxWidth="800px">
       <Page.Header
-        title={process.env.APP_NAME || 'App Template'}
+        title="App Template"
         buttonStack={
           <Responsive
             mobileContent={

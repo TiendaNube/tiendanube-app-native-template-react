@@ -1,10 +1,10 @@
 import axiosApi from 'axios';
-import { getSessionToken } from '@tiendanube/nexo/helpers';
+import { getSessionToken } from '@tiendanube/nexo';
 
 import nexo from '../NexoClient';
 
 const axios = axiosApi.create({
-  baseURL: 'http://localhost:8000',
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 axios.interceptors.request.use(

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { navigateHeader } from '@tiendanube/nexo/helpers';
+import { navigateHeader } from '@tiendanube/nexo';
 import { Page, Layout } from '@nimbus-ds/patterns';
 import { Box } from '@nimbus-ds/components';
 
@@ -7,7 +7,7 @@ import { nexo } from '@/app';
 import { Card } from './components';
 import { examples } from './examples.definitions';
 
-const ExamplesPage: React.FC = () => {
+const Examples: React.FC = () => {
   useEffect(() => {
     navigateHeader(nexo, { goTo: '/', text: 'Volver ao inicio' });
   }, []);
@@ -48,4 +48,4 @@ const ExamplesPage: React.FC = () => {
   );
 };
 
-export default ExamplesPage;
+export default Examples;

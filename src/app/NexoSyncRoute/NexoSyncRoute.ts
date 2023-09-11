@@ -1,14 +1,12 @@
 import { useEffect } from 'react';
 
 import { useLocation, useNavigate } from 'react-router-dom';
-import { syncPathname } from '@tiendanube/nexo/helpers';
-
-import nexo from '../NexoClient';
-
 import {
-  ACTION_NAVIGATE_SYNC,
+  syncPathname,
   NavigateSyncResponse,
-} from '@tiendanube/nexo/actions';
+  ACTION_NAVIGATE_SYNC,
+} from '@tiendanube/nexo';
+import nexo from '../NexoClient';
 
 const NexoSyncRoute = ({ children }: { children: JSX.Element }) => {
   const { pathname } = useLocation();
