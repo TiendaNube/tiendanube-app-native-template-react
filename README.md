@@ -21,23 +21,14 @@ To successfully integrate with our apis, it is necessary to make some settings i
 ```bash
 # Address where your api is running
 VITE_API_URL=
+# You app id
+VITE_CLIENT_ID
 ```
 
-It is also necessary to prepare our local database for this and rename the `db.example.json` file to `db.json` in the root of the `api` folder.
+## Authenticating and configuring the project
 
-## Authentication
+To successfully authenticate and integrate your application, follow the instructions provided in the API [configuration](https://github.com/TiendaNube/tiendanube-app-native-template-node/tree/main/api#configuring-environment-variables) and [authentication](https://github.com/TiendaNube/tiendanube-app-native-template-node/tree/main/api#authentication) guide.
 
-- To authenticate the app, you need to modify its redirect URL in the Partners Portal to the API URL and install it in a store. This will ensure that when the authentication process is triggered, the app will be redirected to the designated URL, including the necessary 'code' query string. The 'code' parameter is essential for constructing the body of the POST request to the `https://www.tiendanube.com/apps/authorize/token` authentication API. Upon successful authentication, the API will respond with an object that should be securely stored within the 'credentials' property of the db.json file.
+## License
 
-## Limitations and Considerations
-
-- The `db.json` file simply stores the credentials of a store, and when the installation process is repeated, the old object is replaced by the new one.
-- It is necessary to rename the `.env-example` file to `.env` and configure the environment variables with the requested values; otherwise, it will not work.
-- If you don't change the redirect URL in the Partners Portal to the port where the project is running, it won't be possible to authenticate the app or access the Product API.
-- For the Product API to work, the app must have `Write products` permission. [Learn more about permissions](https://dev.nuvemshop.com.br/en/docs/developer-tools/nuvemshop-api#accessing-the-product-api)
-
-## References and Additional Resources
-
-- [Authentication](https://dev.nuvemshop.com.br/en/docs/applications/authentication)
-- [Nuvemshop/Tiendanube API - Product](https://dev.nuvemshop.com.br/en/docs/developer-tools/nuvemshop-api#accessing-the-product-api)
-- If you have any questions or need further assistance, please don't hesitate to reach out to us through the Help section of the Partners Portal.
+This repository is available as open-source under the terms of the [MIT License](https://opensource.org/license/mit/). Be sure to review and comply with the license guidelines when using this code.
