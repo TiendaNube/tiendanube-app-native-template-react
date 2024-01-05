@@ -20,9 +20,9 @@ To successfully integrate with our apis, it is necessary to make some settings i
 
 ```bash
 # Address where your api is running
-VITE_API_URL=
+VITE_API_URL= "http://localhost:8000/"
 # You app id
-VITE_CLIENT_ID
+VITE_CLIENT_ID= 
 ```
 
 ## Authenticating and configuring the project
